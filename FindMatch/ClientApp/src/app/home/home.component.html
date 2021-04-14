@@ -1,0 +1,36 @@
+  <h1>Find Text Match</h1>
+  <h4>Enter a Text and SubText and click the Find Match Button.</h4>
+  <hr />
+  <div class="container">
+    <form [formGroup]="form" novalidate>
+      <div style="width:50%; overflow-wrap:break-word">
+        <p aria-live="polite">Output: <strong>{{ matchTextOutPut }}</strong></p>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <label>Text</label>
+          </td>
+          <td><textarea cols="20" rows="2" id="txtText" formControlName="text"></textarea></td>
+        </tr>
+        <tr>
+          <td>
+            <label>Sub Text</label>
+          </td>
+          <td><textarea cols="20" rows="2" id="txtSubText" formControlName="subText"></textarea> </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button class="btn btn-primary" (click)="matchText()">Find Match</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+    
+  
+
+  
+  
+
